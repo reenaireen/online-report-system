@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supervisor Dashboard - Online Report System</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/supervisor-dashboard.css">
+</head>
+<body>
+    <header>
+        <h1>ONLINE REPORT SYSTEM</h1>
+    </header>
+
+    <div class="container">
+        <div class="header-section">
+            <h2>Supervisor Dashboard</h2>
+        </div>
+        
+        <div class="student-details">
+            <h3>Student Details</h3>
+            <label for="student-name">Name:</label>
+            <input type="text" id="student-name" value="AIREEN NUR AMELYN BINTI KHAIRUL FAUZI" readonly>
+
+            <label for="faculty">Faculty:</label>
+            <input type="text" id="faculty" value="FTMK" readonly>
+
+            <label for="matric-no">Matric No:</label>
+            <input type="text" id="matric-no" value="D032210230" readonly>
+
+            <label for="programme">Programme:</label>
+            <input type="text" id="programme" value="DIPLOMA COMPUTER SCIENCE" readonly>
+
+            <label for="company">Industrial Training Company:</label>
+            <input type="text" id="company" value="PEJABAT PENDIDIKAN DAERAH KLUANG" readonly>
+
+            <label for="faculty-supervisor">Supervisor From The Faculty:</label>
+            <input type="text" id="faculty-supervisor" value="MOHD SHAIFUL AMIRUDDIN BIN MOHD SAFUAN" readonly>
+
+            <label for="industry-supervisor">Industrial Training Supervisor:</label>
+            <input type="text" id="industry-supervisor" value="KHADIJAH BINTI WAN MOHD GHAZALI" readonly>
+        </div>
+
+        <div class="report-section">
+            <h3>Select Date To View Reports</h3>
+            <input type="date" id="report-date">
+            <button id="show-report-btn">Show Report</button>
+            <button id="clear-date-btn">Clear Date</button>
+
+            <div class="report-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Progress PDF</th>
+                            <th>Comment</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Table initially empty, will populate when admin uploads reports -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="footer-section">
+            <button class="logout-btn">Log Out</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>© reen 2024</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

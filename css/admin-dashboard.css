@@ -1,0 +1,111 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #151B54;
+    color: white;
+    padding: 9px;
+    text-align: center;
+}
+
+.container {
+    width: 95%;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.header-section {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #151B54;
+}
+
+.upload-section, .delete-section {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #151B54;
+}
+
+input[type="date"], input[type="file"], input[type="text"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background-color: #151B54;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button#delete-btn {
+    background-color: #d32f2f;
+}
+
+.progress-table {
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+table th {
+    background-color: #f4f4f4;
+}
+
+table tbody tr {
+    background-color: #e6ffe6; /* Rows will appear when reports are uploaded */
+}
+
+.footer-section {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.logout-btn {
+    background-color: #151B54;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #151B54;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.logout-btn:hover {
+    background-color: #151B54;
+}

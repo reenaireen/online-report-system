@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Online Report System</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/admin-dashboard.css">
+</head>
+<body>
+    <header>
+        <h1>ONLINE REPORT SYSTEM</h1>
+    </header>
+
+    <div class="container">
+        <div class="header-section">
+            <h2>Admin Dashboard</h2>
+        </div>
+        <div class="upload-section">
+            <label for="date">Upload New Progress</label>
+            <input type="date" id="date" name="date">
+            <input type="file" id="file-upload">
+            <button id="upload-btn">Upload Progress</button>
+        </div>
+
+        <div class="delete-section">
+            <label for="delete-report">Delete Report</label>
+            <input type="text" id="delete-report" placeholder="Enter date to delete">
+            <button id="delete-btn">Delete</button>
+        </div>
+
+        <div class="progress-table">
+            <h3>Existing Progress Updates</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Progress PDF</th>
+                        <th>Comment from Supervisor</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Initially empty, to be populated by admin uploads -->
+                </tbody>
+            </table>
+        </div>
+
+        <div class="footer-section">
+            <button class="logout-btn">Log Out</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>© reen 2024</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
